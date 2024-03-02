@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: 0 auto;
+
+            input, select {
+                margin-top: 10px;
+            }
+
+            button {
+                background-color: green;
+                color: white;
+                border:none;
+                padding: 1rem;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <input type="text" placeholder="marca" >
+        <input type="number" placeholder="precio">
+        Garantia<input type="checkbox" checked />
+        <br/>
+        Colores
+        <select name="" id="">
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+            <option value="dorado">Dorado</option>
+        </select>
+        <input type="text" placeholder="Almacenamiento">
+        <br/>
+        <span>
+            Camara frontal <input type="checkbox" checked />
+        </span>
+        <input type="text" placeholder="Resolucion Camara">
+        <button>Guardar informacion</button>
+    </form>
+
+
+    <script src="poo.js"></script>
+</body>
+</html>
