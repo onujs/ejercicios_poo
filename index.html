@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
         body {
             font-family: sans-serif;
         }
-        form{
+
+        form {
             display: flex;
             flex-direction: column;
             width: 40%;
@@ -21,36 +23,37 @@
             button {
                 background-color: green;
                 color: white;
-                border:none;
+                border: none;
                 padding: 1rem;
                 margin-top: 20px;
             }
         }
     </style>
-</head>
-<body>
     
-    <form>
-        <input type="text" placeholder="marca" >
-        <input type="number" placeholder="precio">
-        Garantia<input type="checkbox" checked />
+</head>
+
+<body>
+
+    <form id="formularioIngreso">
+        <input type="text" placeholder="Marca" id="marca" />
+        <input type="number" placeholder="Precio" id="precio" />
+        <span><input type="checkbox" id="garantia" value="garantia" />Garantia</span>
         <br/>
         Colores
-        <select name="" id="">
+        <select name="" id="color">
             <option value="negro">Negro</option>
             <option value="blanco">Blanco</option>
             <option value="dorado">Dorado</option>
         </select>
-        <input type="text" placeholder="Almacenamiento">
+        <input type="text" placeholder="Almacenamiento" id="almacenamiento">
         <br/>
         <span>
-            Camara frontal <input type="checkbox" checked />
+            <input type="checkbox" id="camaraFrontal" value="camaraFrontal" /> Cámara Frontal
         </span>
-        <input type="text" placeholder="Resolucion Camara">
-        <button>Guardar informacion</button>
+        <input type="text" placeholder="Resolución Cámara" id="resolucion">
+        <button type="submit">Guardar información</button>
     </form>
-
-
-    <script src="poo.js"></script>
+    <script src="registroscelulares.js"></script>
 </body>
+
 </html>
